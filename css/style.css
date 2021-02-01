@@ -1,0 +1,28 @@
+.container{
+  background-color: pink;
+}
+
+.container > div{
+  border: 1px solid black;
+}
+
+.container [class*="col-"]{
+  position: relative;
+}
+
+.text-col {
+  position: absolute;
+  max-width: 100%;
+  top: 50%;
+  left:50%;
+  transform: translate(-50%, -50%);
+}
+
+.nested{
+  padding: 5px;
+}
+
+.nested > [class*="col-"]{
+  background-color: #fa7898;
+  border: 1px solid white;
+}
